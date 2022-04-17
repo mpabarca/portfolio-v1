@@ -2,22 +2,50 @@
   display: flex;
   width: 100%;
   height: 100%;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   .main {
-    width: 90%;
+    height: 90%;
   }
   .sidebar {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 10%;
-    height: 100vh;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
     border: 3px solid black;
     padding: 15px;
     background-color: #fff;
+    position: fixed;
+    display: block;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .layout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    .main {
+      width: 90%;
+    }
+    .sidebar {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 10%;
+      height: 100vh;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      border: 3px solid black;
+      padding: 15px;
+      background-color: #fff;
+    }
   }
 }
