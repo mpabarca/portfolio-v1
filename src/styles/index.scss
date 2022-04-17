@@ -1,0 +1,9 @@
+@import '/node_modules/bootstrap/scss/bootstrap';
+
+// base
+@import './base/body';
+@import './base/variable';
+
+// components
+@import './components/home.scss';
+@import './components/navbar.scss';
