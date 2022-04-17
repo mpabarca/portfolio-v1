@@ -7,9 +7,9 @@ import Sidebar from './Sidebar';
 
 function Layout() {
   return (
-    <div className='App'>
+    <div className='layout'>
       <Sidebar />
-      <div className='page'>
+      <div className='main'>
         <Hero />
         <About />
         <Experience />
