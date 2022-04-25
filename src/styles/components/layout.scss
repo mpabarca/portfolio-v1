@@ -4,22 +4,28 @@
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 100%;
+  height: auto !important;
+  margin-bottom: -60px;
   .main {
     height: 90%;
   }
   .sidebar {
+    width: 100%;
+    height: 60px;
     border: 3px solid black;
     padding: 15px;
     background-color: #fff;
     position: fixed;
-    display: block;
+    display: flex;
+    justify-content: center;
     z-index: 2;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom: 0;
     display: flex;
     gap: 0.8rem;
-    border-radius: 3rem;
     backdrop-filter: blur(15px);
   }
   .container {
@@ -44,7 +50,6 @@
       width: 90%;
     }
     .sidebar {
-      justify-content: center;
       flex-direction: column;
       width: 10%;
       max-width: 150px;
