@@ -30,7 +30,6 @@
     "no-unused-vars": "warn",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "react/prop-types": "off",
-    "javascript.validate.enable": false
+    "react/prop-types": "off"
   }
 }

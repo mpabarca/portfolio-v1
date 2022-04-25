@@ -1,16 +1,30 @@
 #experience {
-  .work-box-desktop {
+  .work-box-mobile {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 20px;
-    .work-tab-list {
+  }
+  .work-box-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #experience {
+    .work-box-desktop {
       display: flex;
-      flex-direction: column;
-      button {
-        text-align: start;
-        padding: 5px;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 20px;
+      .work-tab-list {
+        display: flex;
+        flex-direction: column;
+        button {
+          text-align: start;
+          padding: 5px;
+        }
       }
+    }
+    .work-box-mobile {
+      display: none;
     }
   }
 }
