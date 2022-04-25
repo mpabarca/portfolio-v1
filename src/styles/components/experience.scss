@@ -1,0 +1,16 @@
+#experience {
+  .work-box-desktop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 20px;
+    .work-tab-list {
+      display: flex;
+      flex-direction: column;
+      button {
+        text-align: start;
+        padding: 5px;
+      }
+    }
+  }
+}
