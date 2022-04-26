@@ -1,3 +1,4 @@
+import 'swiper/css/bundle';
 import Layout from './components/Layout';
 
 function App() {
