@@ -27,6 +27,7 @@
     ]
   },
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
@@ -43,6 +44,7 @@
     "react-scripts": "5.0.1",
     "rough-notation": "^0.5.1",
     "sass": "^1.50.0",
+    "sweetalert2": "^11.4.9",
     "swiper": "^8.1.4",
     "web-vitals": "^2.1.4"
   },
