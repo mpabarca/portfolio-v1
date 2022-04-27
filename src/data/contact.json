@@ -1,0 +1,22 @@
+{
+  "spanish": {
+    "pageName": "Contáctame",
+    "name": "Nombre completo",
+    "placeholderName": "Nombre y apellido",
+    "email": "Correo electrónico",
+    "placeholderEmail": "email@dominio.com",
+    "message": "Mensaje",
+    "placeholderMessage": "Deja aquí tu mensaje, pronto te contestaré!",
+    "submit": "Enviar"
+  },
+  "english": {
+    "pageName": "Contact me",
+    "name": "Full name",
+    "placeholderName": "Firs and Last",
+    "email": "Email address",
+    "placeholderEmail": "email@domain.com",
+    "message": "Message",
+    "placeholderMessage": "Leave your message here, soon I will contact you",
+    "submit": "Send"
+  }
+}

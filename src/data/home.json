@@ -1,0 +1,12 @@
+{
+  "description": {
+    "spanish": {
+      "pageName": "Home",
+      "description": "Desarrolladora Front End"
+    },
+    "english": {
+      "pageName": "Home",
+      "description": "Front End Developer"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "spanish": {
+    "home": "home",
+    "about": "Sobre mi",
+    "experience": "Experiencia",
+    "contact": "Contacto"
+  },
+  "english": {
+    "home": "home",
+    "about": "About me",
+    "experience": "Experience",
+    "contact": "Contact"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "description": {
+    "spanish": {
+      "pageName": "Experiencia",
+      "workList": ["Ecomsur", "Toctoc", "Enara Health", "Globant"],
+      "workDescription": [
+        {
+          "company": "Ecomsur",
+          "role": "Front end Designer",
+          "time": "Marzo 2019 - Septiembre 2019",
+          "description": [
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra."
+          ]
+        },
+        {
+          "company": "Toctoc",
+          "role": "Full stack Developer",
+          "time": "Septiembre 2019 - Septiembre 2021",
+          "description": [
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra."
+          ]
+        },
+        {
+          "company": "Enara Health",
+          "role": "Full stack Developer",
+          "time": "Septiembre 2021 - Febrero 2022",
+          "description": [
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra."
+          ]
+        },
+        {
+          "company": "Globant",
+          "role": "Web  UI Developer",
+          "time": "Febrero 2022 - Presente",
+          "description": [
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra.",
+            "Yo vivo en Granada, una ciudad pequeña que tiene monumentos muy importantes como la Alhambra."
+          ]
+        }
+      ]
+    },
+    "english": {
+      "pageName": "Experience",
+      "workList": ["Ecomsur", "Toctoc", "Enara Health", "Globant"],
+      "workDescription": [
+        {
+          "company": "Ecomsur",
+          "role": "Front end Designer",
+          "time": "March 2019 - September 2019",
+          "description": [
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus."
+          ]
+        },
+        {
+          "company": "Toctoc",
+          "role": "Full stack Developer",
+          "time": "September 2019 - September 2021",
+          "description": [
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus."
+          ]
+        },
+        {
+          "company": "Enara Health",
+          "role": "Full stack Developer",
+          "time": "September 2021 - February 2022",
+          "description": [
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus."
+          ]
+        },
+        {
+          "company": "Globant",
+          "role": "Web  UI Developer",
+          "time": "February 2022 -Today",
+          "description": [
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus.",
+            "I live in a big house on Ivy Street. It is near the college campus."
+          ]
+        }
+      ]
+    }
+  }
+}
