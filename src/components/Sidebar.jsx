@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import data from '../data/sidebar.json';
 
-function Sidebar({ language }) {
-  const [base, setBase] = useState(data[language]);
+function Sidebar() {
+  const { languageSelected } = useSelector((state) => state.language);
+  const [base, setBase] = useState(data[languageSelected]);
 
   useEffect(() => {
-    setBase(data[language]);
-  }, [language]);
+    setBase(data[languageSelected]);
+  }, [languageSelected]);
 
   return (
     <nav className='sidebar'>

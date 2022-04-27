@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import About from './About';
 import Contact from './Contact';
 import Experience from './Experience';
@@ -8,17 +8,16 @@ import Sidebar from './Sidebar';
 import SocialMedias from './SocialMedias';
 
 function Layout() {
-  const [language, setLanguage] = useState('english');
   return (
     <div className='layout'>
-      <Sidebar language={language} />
+      <Sidebar />
       <div className='main'>
-        <FeaturesHeader setLanguage={setLanguage} />
+        <FeaturesHeader />
         <div className='content'>
-          <Hero language={language} />
-          <About language={language} />
-          <Experience language={language} />
-          <Contact language={language} />
+          <Hero />
+          <About />
+          <Experience />
+          <Contact />
         </div>
         <SocialMedias />
       </div>

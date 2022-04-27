@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import data from '../data/about.json';
 
-function About({ language }) {
-  const [base, setBase] = useState(data[language]);
+function About() {
+  const { languageSelected } = useSelector((state) => state.language);
+  const [base, setBase] = useState(data[languageSelected]);
 
   useEffect(() => {
-    setBase(data[language]);
-  }, [language]);
+    setBase(data[languageSelected]);
+  }, [languageSelected]);
 
   return (
     <div id='about' className='container'>

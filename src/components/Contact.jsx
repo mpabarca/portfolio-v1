@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import data from '../data/contact.json';
 import ContactForm from './ContactForm';
 
-function Contact({ language }) {
-  const [base, setBase] = useState(data[language]);
+function Contact() {
+  const { languageSelected } = useSelector((state) => state.language);
+  const [base, setBase] = useState(data[languageSelected]);
 
   useEffect(() => {
-    setBase(data[language]);
-  }, [language]);
+    setBase(data[languageSelected]);
+  }, [languageSelected]);
 
   return (
     <div id='contact' className='container'>

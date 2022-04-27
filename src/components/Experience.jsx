@@ -1,20 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import data from '../data/experience.json';
 import WorkBoxDesktop from './WorkBoxDesktop';
 import WorkBoxMobile from './WorkBoxMobile';
 
-function Experience({ language }) {
-  const [base, setBase] = useState(data[language]);
-
-  useEffect(() => {
-    setBase(data[language]);
-  }, [language]);
+function Experience() {
+  const { languageSelected } = useSelector((state) => state.language);
+  const base = data[languageSelected];
 
   return (
     <div id='experience' className='container'>
       <h1>{base.pageName}</h1>
-      <WorkBoxDesktop base={base} />
-      <WorkBoxMobile base={base} />
+      <WorkBoxDesktop />
+      <WorkBoxMobile />
     </div>
   );
 }

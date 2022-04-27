@@ -1,18 +1,28 @@
 import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { changeLanguage } from '../redux/language';
 
-function FeaturesHeader({ setLanguage }) {
-  const handleOnClick = (e) => {
-    e.preventDefault();
-    setLanguage(e.target.value);
-  };
+function FeaturesHeader() {
+  const { languageSelected } = useSelector((state) => state.language);
+  const dispatch = useDispatch();
+
   return (
     <nav className='features'>
-      <button type='button' value='spanish' onClick={(e) => handleOnClick(e)}>
+      <h1>{languageSelected}</h1>
+      <button
+        type='button'
+        value='spanish'
+        onClick={(e) => dispatch(changeLanguage(e.target.value))}
+      >
         ES
       </button>
-      <button type='button' value='english' onClick={(e) => handleOnClick(e)}>
+      <button
+        type='button'
+        value='english'
+        onClick={(e) => dispatch(changeLanguage(e.target.value))}
+      >
         EN
       </button>
       <button type='button'>
