@@ -2,14 +2,22 @@ import { faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-function FeaturesHeader() {
+function FeaturesHeader({ setLanguage }) {
+  const handleOnClick = (e) => {
+    e.preventDefault();
+    setLanguage(e.target.value);
+  };
   return (
     <nav className='features'>
-      <a href='/'>ES</a>
-      <a href='/'>EN</a>
-      <a href='/'>
+      <button type='button' value='spanish' onClick={(e) => handleOnClick(e)}>
+        ES
+      </button>
+      <button type='button' value='english' onClick={(e) => handleOnClick(e)}>
+        EN
+      </button>
+      <button type='button'>
         <FontAwesomeIcon icon={faCircleHalfStroke} />
-      </a>
+      </button>
     </nav>
   );
 }

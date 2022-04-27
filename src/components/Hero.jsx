@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import data from '../data/home.json';
 
-const Hero = () => {
+function Hero({ language }) {
+  const [base, setBase] = useState(data[language]);
+
+  useEffect(() => {
+    setBase(data[language]);
+  }, [language]);
+
   return (
     <div className='col-xxl-8 container px-4 py-5'>
       <div className='row flex-lg-row-reverse align-items-center g-5 py-5'>
@@ -16,11 +23,11 @@ const Hero = () => {
         </div>
         <div className='col-lg-6'>
           <h1 className='display-5 fw-bold lh-1 mb-3'>Maria Paz Abarca</h1>
-          <p className='lead'>Front-end web developer</p>
+          <p className='lead'>{base.description}</p>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Hero;

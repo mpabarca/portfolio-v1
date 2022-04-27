@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import data from '../data/sidebar.json';
 
-function Sidebar() {
+function Sidebar({ language }) {
+  const [base, setBase] = useState(data[language]);
+
+  useEffect(() => {
+    setBase(data[language]);
+  }, [language]);
+
   return (
     <nav className='sidebar'>
-      <a href='#'>Home</a>
-      <a href='#about'>About Me</a>
-      <a href='#experience'>Experience</a>
-      <a href='#contact'>Contact</a>
+      <a href='#'>{base.home}</a>
+      <a href='#about'>{base.about}</a>
+      <a href='#experience'>{base.experience}</a>
+      <a href='#contact'>{base.contact}</a>
     </nav>
   );
 }
