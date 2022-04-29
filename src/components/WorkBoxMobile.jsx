@@ -10,17 +10,12 @@ import data from '../data/experience.json';
 const WorkBoxMobile = () => {
   const { languageSelected } = useSelector((state) => state.language);
 
-  const base = data[languageSelected];
-
-  const [jobSelected, setJobSelected] = useState(base.workList[0]);
-  const [jobData, setJobData] = useState(base.workDescription[jobSelected]);
-
-  useEffect(() => {
-    setJobData(base.workDescription[jobSelected]);
-  }, [jobSelected]);
+  const [jobData, setJobData] = useState(
+    Object.values(data[languageSelected].workDescription),
+  );
 
   useEffect(() => {
-    setJobData(base.workDescription[jobSelected]);
+    setJobData(Object.values(data[languageSelected].workDescription));
   }, [languageSelected]);
 
   return (
@@ -36,18 +31,18 @@ const WorkBoxMobile = () => {
         modules={[Navigation, Pagination, History]}
         className='mySwiper'
       >
-        {base.workList.map((job, index) => {
+        {jobData.map((job, index) => {
           return (
-            <SwiperSlide data-history={job} key={index}>
+            <SwiperSlide data-history={job.company} key={index}>
               <div className='card'>
                 <div className='card-body'>
                   <h4>
-                    {jobData.role} - {jobData.company}
+                    {job.role} - {job.company}
                   </h4>
-                  <h6>{jobData.time}</h6>
+                  <h6>{job.time}</h6>
                   <ul>
-                    {jobData.description.map((job, index) => (
-                      <li key={index}>{job}</li>
+                    {job.description.map((description, index) => (
+                      <li key={index}>{description}</li>
                     ))}
                   </ul>
                 </div>
