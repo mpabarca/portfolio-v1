@@ -20,7 +20,7 @@ function SocialMedias() {
       <a target='_blank' href={data.github} rel='noreferrer'>
         <FontAwesomeIcon icon={faGithub} />
       </a>
-      <a target='_blank' href={`mailto:${data.email}`} rel='noreferrer'>
+      <a href='#contact' rel='noreferrer'>
         <FontAwesomeIcon icon={faEnvelope} />
       </a>
     </nav>
