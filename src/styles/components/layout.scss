@@ -57,6 +57,11 @@
     order: 1;
     display: flex;
     justify-content: flex-start;
+    padding: 10px 0 0;
+    a{
+      font-size: 1.4rem;
+      padding-left: 15px;
+    }
   }
   .features {
     order: 2;
@@ -111,6 +116,7 @@
     .social-medias {
       bottom: 0;
       order: 3;
+      padding: 0 0 10px;
       a{
         font-size: 1.5rem;
         padding-right: 10px;

@@ -37,6 +37,9 @@ section#background{
       mix-blend-mode: screen;
       left: -25vw;
     }
+    &#stars{
+      transform: none ;
+    }
   }
   &::before{
     content: '';
