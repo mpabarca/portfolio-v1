@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
+import ContactForm from '../components/ContactForm';
 import dataContact from '../data/contact.json';
 import dataLink from '../data/link.json';
-import ContactForm from './ContactForm';
 
 function Contact() {
   const { languageSelected } = useSelector((state) => state.language);

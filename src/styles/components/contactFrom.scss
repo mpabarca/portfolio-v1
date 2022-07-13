@@ -1,0 +1,14 @@
+.contactForm {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    label {
+      text-align: start;
+    }
+    input,
+    textarea {
+      margin-bottom: 10px;
+    }
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import WorkBoxDesktop from '../components/WorkBoxDesktop';
+import WorkBoxMobile from '../components/WorkBoxMobile';
 import data from '../data/experience.json';
-import WorkBoxDesktop from './WorkBoxDesktop';
-import WorkBoxMobile from './WorkBoxMobile';
 
 function Experience() {
   const { languageSelected } = useSelector((state) => state.language);

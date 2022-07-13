@@ -1,0 +1,19 @@
+.work-box-desktop {
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .work-box-desktop {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 20px;
+        .work-tab-list {
+          display: flex;
+          flex-direction: column;
+          button {
+            text-align: start;
+            padding: 5px;
+          }
+        }
+    }
+}

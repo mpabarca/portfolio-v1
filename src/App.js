@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import 'swiper/css/bundle';
 import Moon from './assets/moon.png';
 import Stars from './assets/stars.png';
-import Layout from './components/Layout';
+import Layout from './containers/Layout';
 
 function App() {
   const [clientXMouse, setClientXMouse] = useState(0);

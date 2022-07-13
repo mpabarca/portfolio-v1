@@ -6,7 +6,7 @@ function ContactForm() {
     return <p>Thanks for contact me! Soon I will be reach you</p>;
   }
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='contactForm' onSubmit={handleSubmit}>
       <label htmlFor='full-name'>Full Name</label>
       <input
         type='text'

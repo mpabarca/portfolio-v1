@@ -1,0 +1,25 @@
+.features{
+  z-index: 10000;
+  flex: 0 0 auto;
+  width: 50%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  //background-color: $background-color-base;
+  order: 2;
+  display: flex;
+  justify-content: flex-end;
+  a {
+    margin-left: 8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+    .features {
+        height: 8.33333333%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        top: 0;
+        order: 1;
+    }
+  }

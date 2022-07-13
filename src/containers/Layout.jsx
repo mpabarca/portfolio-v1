@@ -1,11 +1,11 @@
 import React from 'react';
+import Sidebar from '../components/Sidebar';
+import SocialMedias from '../components/SocialMedias';
 import About from './About';
 import Contact from './Contact';
 import Experience from './Experience';
 //import FeaturesHeader from './FeaturesHeader';
 import Hero from './Hero';
-import Sidebar from './Sidebar';
-import SocialMedias from './SocialMedias';
 
 function Layout() {
   return (
